@@ -23,7 +23,7 @@ class Song
     #create song
     @song = self.new(song_name)
 
-    #find or create artist, save artists to list of artists
+    #find or create artist, save artist to list of artists
     @artist = Artist.find_or_create_by_name(@artist)
     @artist.save
 
